@@ -5,12 +5,12 @@
  ###
 ####
 
-Write a function that takes parameter n and prints a staircase of size n. */
+Write a function that takes parameter n and prints a right-aligned staircase of size n. */
 
 const staircase = n => {
-    let array = new Array(n).fill(" ");
+    let step = new Array(n).fill(" ");
     for (let i = 1; i <= n; i++) {
-        array[n - i] = "#";
-        console.log(array.join(""));
+        step[n - i] = "#";
+        console.log(step.join("")); // Use "" otherwise commas in output
     }
 };
